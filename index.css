@@ -1,0 +1,71 @@
+body{
+   background-image: url("image/new.avif");
+    background-repeat:no-repeat;
+    background-size: 100%;
+   -webkit-background-size:cover;
+}
+
+.container {
+  position: absolute;
+  box-shadow: 10px 12px #888888;
+  top: 50%;
+  height: 55%;
+  width: 40%;
+  left: 50%;
+  background-color: aliceblue;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-wrap: wrap;
+ justify-content: center;
+}
+
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+ margin: 0 12px;
+}
+
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+
+.col-50
+ {
+  padding: 0 16px;
+}
+
+.space{
+    margin-top: 20px;
+}
+
+.btn {
+  background-color: #1776d4;
+  color: white;
+  padding: 12px;
+  margin: 10px 10px;
+  border: none;
+  width: 40%;
+  height: 60px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 17px;
+  
+}

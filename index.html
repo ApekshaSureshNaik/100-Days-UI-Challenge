@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day2 Challenge</title>
+     <link rel="stylesheet" href="index.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   <div class="container">
+    <div class="row">
+    <div class="col-50">
+ <label for="fname" style="font-size: 40px;
+ margin-left: 20px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction
+    :column-reverse;
+    margin-top: 30px;">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;margin-right: 10px;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;margin-right: 10px;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;margin-right: 10px;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;margin-right: 10px;"></i>
+            </div>
+            <br>
+            <label for="cname" style="margin-right: 20px;margin-left: 20px;">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="Enter name" style="margin-left: 30px;height: 30px;width: 60%;">
+           <br>
+           <div class="space">
+            <label for="ccnum" style="margin-right: 20px;margin-left: 20px;">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" style="height: 30px;width: 60%;">
+            </div>
+             <br>
+            <label for="expmonth" style="margin-right: 20px;margin-left: 20px;">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September" style="margin-left: 50px;height: 30px;width: 60%;">
+            <br>
+            <div class="row">
+              <div  style="margin-top: 30px;">
+                <label for="expyear" style="margin-right: 20px;margin-left: 20px;">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2026" style="height: 30px;width: 30%;">
+              </div>
+              <div style="margin-top: 30px;">
+                <label for="cvv" style="margin-right: 20px;">CVV</label>
+                <input type="password" id="cvv" name="cvv" placeholder="111" style="height: 30px;width: 30%;">
+              </div>
+            </div>
+          </div>
+          
+          </div>
+           <input type="submit" value="Continue to checkout" class="btn"  >
+</div>
+</body>
+</html>
