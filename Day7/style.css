@@ -201,6 +201,7 @@ color: #49274a;
     padding: 15px;
 }
 
+
 .center{
   
     display: flex;
@@ -213,25 +214,96 @@ color: #49274a;
     background-color: #ebe6e3;
     margin-left: 100px;
     margin-right: 30px;
+    padding-bottom: 30px;
     box-shadow: 0 0.5rem 0.8rem rgba(0,0,0,0.2);
 }
-input[type=text] {
-    border: 2px solid grey;
-    border-radius: 4px;
-    height: 40px;
+
+/*drop down */
+.dropbtn {
+    background-color: #49274A;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f4decb}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #49274A;
   }
 
-  .pbutton{
-    background-color:#94618e;
-    color: #fff;
-    border:none; 
-    border-radius:10px; 
-    min-height:50px; 
-    min-width: 100px;
+  /* switch */
+  input {
+    -webkit-appearance: none;
+    position: relative;
+    width: 50px;
+    height: 30px;
+    border-radius: 25px;
+    background-color: #ccc;
+    transition: background .3s;
+    outline: none;
+    cursor: pointer;
   }
-@media only screen and (max-width: 620px) {
-    /* For mobile phones: */
-    .left-part, .main-part, .right-part {
-      width: 20%;
-    }
+
+  input::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    height: 1.25rem;
+    width: 1.25rem;
+    background-color: rgb(255,255,255);
+    transition: left .3s;
+  }
+
+  input:checked{
+    background-color:#49274A ;
+  }
+
+  input:checked::after{
+    left: 70%;
+  }
+
+  .pt-sans-regular {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
   }
