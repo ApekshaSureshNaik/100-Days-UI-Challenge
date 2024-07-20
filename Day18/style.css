@@ -1,0 +1,143 @@
+ body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            background-color: rgb(251, 244, 235);
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .chart-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 40%;
+            height: 100%;
+        }
+
+        .chart-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .chart-header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .chart {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+            height: 300px;
+        }
+
+        .chart-bar {
+            width: 50px;
+            background-color: #4CAF50;
+            text-align: center;
+            color: white;
+            border-radius: 5px 5px 0 0;
+            position: relative;
+        }
+
+        .chart-bar::after {
+            content: attr(data-value);
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 14px;
+            color: #333;
+        }
+
+        .chart-labels {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+
+        .chart-labels div {
+            width: 50px;
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .pie-chart {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            position: relative;
+        }
+
+        .pie {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: conic-gradient(
+                #4CAF50 0% 40%, 
+                #FF6347 40% 70%, 
+                #4682B4 70% 100%
+            );
+            position: relative;
+        }
+
+        .pie-chart-label {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-size: 14px;
+            color: white;
+            background-color: rgba(42, 42, 42, 0.532);
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+        .legend {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .legend div {
+            display: flex;
+            align-items: center;
+            margin: 0 10px;
+        }
+
+        .legend div span {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;
+            border-radius: 3px;
+        }
+
+        .legend .walking span {
+            background-color: #4CAF50;
+        }
+
+        .legend .running span {
+            background-color: #FF6347;
+        }
+
+        .legend .cycling span {
+            background-color: #4682B4;
+        }

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Monitor Analytics Chart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Health Monitor Analytics Chart</h1>
+    <br>
+    <div class="container">
+        <div class="chart-container">
+            <div class="chart-header">
+                <h1>Daily Steps</h1>
+            </div>
+            <div class="chart">
+                <div class="chart-bar" data-value="10k" style="height: 80%;"></div>
+                <div class="chart-bar" data-value="8k" style="height: 64%;"></div>
+                <div class="chart-bar" data-value="7k" style="height: 56%;"></div>
+                <div class="chart-bar" data-value="11k" style="height: 88%;"></div>
+                <div class="chart-bar" data-value="9k" style="height: 72%;"></div>
+            </div>
+            <div class="chart-labels">
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <div class="chart-header">
+                <h1>Activity Distribution</h1>
+            </div>
+            <div class="pie-chart">
+                <div class="pie"></div>
+                <div class="pie-chart-label">
+                    <p>Walking: 40%</p>
+                    <p>Running: 30%</p>
+                    <p>Cycling: 30%</p>
+                </div>
+            </div>
+            <div class="legend">
+                <div class="walking"><span></span> Walking</div>
+                <div class="running"><span></span> Running</div>
+                <div class="cycling"><span></span> Cycling</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
