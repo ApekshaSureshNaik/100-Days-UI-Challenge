@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    color: #ffffff;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar {
+    width: 80px;
+    background-color: #2c2c2c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(69, 64, 56, 0.634);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+   flex-direction: row;
+   gap: 5%;
+}
+
+.movie-info {
+    margin-bottom: 20px;
+}
+
+.movie-info h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.movie-info .details {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    flex-direction: row;
+}
+
+.movie-info p {
+    margin-bottom: 20px;
+}
+
+.movie-poster img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.featured {
+    margin-top: 40px;
+}
+
+.featured h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+.carousel .movie {
+    flex: 0 0 auto;
+    width: 150px;
+    margin-right: 10px;   
+}
+
+.carousel .movie img {
+    width: 100%;
+     height: 250px;
+    border-radius: 10px;
+}
+
+.hero{
+    background-color:#4444441b;
+    position: relative;
+    padding-top: 200px;
+   
+}
+.hero::before{
+    content: "";
+    background-image: url("https://www.posters.eu/media/catalog/product/cache/cb3faf85ecb1e071fdba48f981c86454/s/q/squid-game-crowd-poster-61x91.5cm_1.jpg");
+    inset: 0;
+    position: absolute;
+    background-repeat: no-repeat;
+     background-size: 100%;
+    opacity: 0.5;
+}
+
+.cont{
+    isolation: isolate;
+    max-width: 960px;
+    margin-left: 30px;
+    margin-right: 30px;
+    opacity: 1;
+}
+.watch{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+.button{
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 10px;
+    color: #ffffff;
+}
+
+.button:hover{
+    background-color: #ffffff;
+    color: #1c1c1c;
+}
+
+.watch .favorite:hover{
+    color: red;
+}
