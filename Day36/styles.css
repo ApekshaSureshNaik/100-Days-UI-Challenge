@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-size: cover;
+   background-attachment: fixed;
+  background-position: center;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20221228/pngtree-festive-red-festive-promotion-discount-explosion-arrow-offer-background-image_1501086.jpg');
+}
+
+
+.container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 20px;
+  width: 350px;
+}
+
+header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.store-name {
+  color: #333;
+}
+
+.store-name-highlight {
+  color: #f94e50;
+}
+
+.shipping-info {
+  background-color: #ddeef9;
+  color: #333;
+  padding: 5px;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+.sale-announcement h2 {
+  font-size: 32px;
+  margin: 20px 0;
+  position: relative;
+}
+
+.sale-announcement h2::before, .sale-announcement h2::after {
+  content: '"';
+  font-size: 36px;
+  color: #0e387a;
+  position: absolute;
+  top: -10px;
+}
+
+.sale-announcement h2::before {
+  left: 20px;
+}
+
+.sale-announcement h2::after {
+  right: 20px;
+}
+
+.discount-info {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.upto {
+  font-size: 24px;
+  color: #f94e50;
+  margin-right: 10px;
+}
+
+.discount {
+  font-size: 48px;
+  color: #0e387a;
+}
+
+.promo-code {
+  margin: 20px 0;
+  color: #333;
+}
+
+.shop-now-button {
+  display: inline-block;
+  background-color: #f94e50;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 20px;
+}
+
+.social-icons a img {
+  width: 24px;
+  height: 24px;
+  margin: 0 5px;
+}
+
+.unsubscribe {
+  color: #999;
+  font-size: 12px;
+  margin-top: 10px;
+}
