@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar with Notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="notes-section">
+            <h1>FRIDAY</h1>
+            <h2>AUGUST 9TH</h2>
+            <div class="note-input">
+                <input type="text" placeholder="new note">
+                <button class="add-note">+</button>
+            </div>
+            <ul class="notes-list">
+                <li>Dentist Appointment<button class="delete-note">x</button></li>
+                <!-- Additional notes will appear here -->
+            </ul>
+        </div>
+        <div class="calendar-section">
+            <div class="year">2024</div>
+            <div class="months">
+                <span>JAN</span>
+                <span>FEB</span>
+                <span>MAR</span>
+                <span>APR</span>
+                <span>MAY</span>
+                <span>JUN</span>
+                <span>JUL</span>
+                <span class="active">AUG</span>
+                <span >SEP</span>
+                <span>OCT</span>
+                <span>NOV</span>
+                <span>DEC</span>
+            </div>
+            <div class="weekdays">
+                <span>MON</span>
+                <span>TUE</span>
+                <span>WED</span>
+                <span>THU</span>
+                <span>FRI</span>
+                <span>SAT</span>
+                <span>SUN</span>
+            </div>
+            <div class="days" style="margin-top: 20px;font-size: 30px;">
+                <!-- Days will be dynamically generated here -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
