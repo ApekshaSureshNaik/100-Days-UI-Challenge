@@ -1,0 +1,47 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <div class="container">
+        <div class="custom-select">
+            <div class="select-box">
+                <input type="text" class="tags_input" name="tags" hidden>
+                <div class="selected-options">
+                </div>
+                <div class="arrow">
+                    <i class="material-icons icon">keyboard_arrow_down</i>
+                </div>
+            </div>
+            <div class="options">
+                <div class="option-search-tags">
+                    <input type="text" class="search-tags" placeholder="Search programming languages..">
+                    <button type="button" class="clear">
+                        <i class="material-icons">close</i>
+                    </button>
+                </div>
+                <div class="option all-tags" data-value="All">Select All</div>
+                 <div class="option" data-value="C">C</div>
+                 <div class="option" data-value="C++">C++</div>
+                 <div class="option" data-value="Java">Java</div>
+                 <div class="option" data-value="Python">Python</div>
+                 <div class="option" data-value="Html">HTML</div>
+                 <div class="option" data-value="CSS">CSS</div>
+                 <div class="option" data-value="JavaScript">JavaScript</div>
+                 <div class="option" data-value="TypeScript">TypeScript</div>
+                 <div class="no-result-message" style="display:none ;">No result match</div>
+            </div>
+            <span class="tag_error_msg error"></span>
+        </div>
+        <input type="button" class="btn_submit" value="Submit" />
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

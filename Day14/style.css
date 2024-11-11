@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    background-image: url('https://media.istockphoto.com/id/1322277517/photo/wild-grass-in-the-mountains-at-sunset.jpg?s=612x612&w=0&k=20&c=6mItwwFFGqKNKEAzv0mv6TaxhLN3zSE43bWmFN--J5w=');
+}
+
+.content{
+    box-shadow: 6px 6px 10px -1px rgba(138, 138, 138, 0.15), -6px -6px 10px -1px rgba(35, 31, 31, 0.7);
+    width: 70%;
+    border-radius: 15px;
+    height: 500px;
+    padding: 25px 30px;
+    background-color: rgba(14, 9, 9, 0.7);
+}
+
+
+#mycontent{
+  background:#8392ad;
+  text-align:center;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 20px;
+  align-items: center;
+}
+
+#mycontent:after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0;
+  top: 0; bottom: 0; border-radius: 20px;
+  
+
+  background-image:
+    linear-gradient(to right, #DED7EA, rgba(119, 119, 119, 0) 80px),
+    linear-gradient(to left , #DED7EA, rgba(175, 180, 180, 0) 80px);
+}
+
+#mycontent .selected{
+    background-color: rgb(36, 36, 67);color: azure;border-radius: 10px;
+     padding: 10px;
+}
+
+.small{
+    font-size: 12px;
+}
+
+.f-25{
+    font-size: 25px;
+}
+.f-26{
+    font-size: 26px;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #78767e;
+    padding: 10px;
+    width: 150px;
+    font-size: 50px;
+}

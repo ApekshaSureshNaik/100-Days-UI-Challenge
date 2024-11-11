@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+    background-image: url("https://img.freepik.com/free-vector/gradient-liquid-abstract-background_23-2148916930.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+.subscribe-container {
+    background-color: #cc9ff927;
+    padding: 40px 60px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.502);
+    text-align: center;
+}
+
+.subscribe-container h1 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: white;
+}
+
+.subscribe-container p {
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: white;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.subscribe-form input {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    width: 300px;
+}
+
+.subscribe-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-form button:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,79 @@
+ body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .upload-container {
+            text-align: center;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 400px;
+        }
+        .upload-header {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .upload-subheader {
+            color: #6c757d;
+            margin-bottom: 20px;
+        }
+        .upload-area {
+            border: 2px dashed #5a97f8;
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px;
+            cursor: pointer;
+            color: #5a97f8;
+            margin-bottom: 20px;
+        }
+        .file-list {
+            margin-bottom: 20px;
+        }
+        .file-item {
+            display: flex;
+            align-items: start;
+            margin-bottom: 10px;
+        }
+        .file-item .file-info {
+            flex-grow: 1;
+            text-align: left;
+        }
+        .file-item .file-progress {
+            width: 100%;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-top: 5px;
+        }
+        .file-item .file-progress .progress-bar {
+            height: 5px;
+            background-color: #00aaff;
+        }
+        .file-item .file-delete {
+            cursor: pointer; 
+        }
+        .action-buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+        .action-buttons button {
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .cancel-button {
+            background-color: #f1f1f1;
+            color: #6c757d;
+        }
+        .attach-button {
+            background-color: #28a745;
+            color: white;
+        }

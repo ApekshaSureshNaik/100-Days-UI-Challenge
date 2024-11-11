@@ -1,0 +1,64 @@
+  body {
+            font-family: Arial, sans-serif;
+            background-color: #fcd8ec !important;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: rgb(240, 223, 235);
+            border-radius: 10px;
+            box-shadow: 30px 30px 10px rgba(223, 60, 204, 0.1);
+            display: flex;
+            width: 700px;
+            overflow: hidden;
+        }
+
+        .image-section {
+            background-color: #954277;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+            border-radius: 10px;
+        }
+
+
+        .image-section img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+
+        .details-section {
+            padding: 20px;
+            flex: 2;
+        }
+
+
+        .details-section .highlight {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .track-order-btn {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+            background-color: #cf4e8b;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .track-order-btn:hover {
+            background-color: #a43286;
+            color: white;
+        }

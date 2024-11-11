@@ -1,0 +1,106 @@
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+        }
+
+        .image-section, .details-section {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .image-section img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+.details-section h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .details-section .price {
+            font-size: 1.5em;
+            color: #4CAF50;
+            margin: 20px 0;
+        }
+
+        .details-section p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .color-options, .size-options, .upload-logo, .custom-text {
+            margin: 20px 0;
+        }
+
+        .color-options .button, .size-options button {
+            border: 1px solid #ddd;
+            border-radius: 30px;
+            margin-right: 10px;
+            cursor: pointer;
+            padding: 5px;
+        }
+          
+    .color-options .button{
+  
+    padding: 5px 10px;
+    width: 20px;
+    height: 20px;
+
+        }
+        .size-options button {
+            padding: 5px 10px;
+        }
+
+        .upload-logo {
+            border: 2px dashed #ddd;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            color: #999;
+            cursor: pointer;
+        }
+
+        .upload-logo input {
+            display: none;
+        }
+
+        .custom-text input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+
+
+        .add-to-cart {
+            margin-top: 20px;
+        }
+
+        .add-to-cart button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .add-to-cart button:hover {
+            background-color: #555;
+        }

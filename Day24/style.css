@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(45deg, #2c4c3c 10.33%, #406a47 33.33%,#688c79 66.66%);
+}
+
+.boarding-pass{
+    position: relative;
+    width: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    filter: drop-shadow(0 0 4px rgba(0,0,0,0.08));
+}
+
+.boarding-pass .card{
+    display: flex;
+    background-color: white;
+    padding: 24px;
+}
+
+.boarding-pass .card.card-top{
+   text-align: center;
+   justify-content: space-between;
+   border-radius: 16px 16px 0 0;
+}
+
+.boarding-pass .card.card-top .code{
+font-size: 32px;
+font-weight: 900;
+}
+.boarding-pass .card.card-top .city{
+font-size: 14px;
+color: cadetblue;
+}
+
+.flight-median{
+    position: relative;
+    height: 50px;
+    width: 100px;
+    top: 12px;
+    border-radius: 100% 100% 0 0 / 180% 180% 0 0;
+    border: 2px dashed transparent;
+    border-top-color: #c7ecee;
+}
+
+.flight-median:before {
+    content: '';
+    position: absolute;
+    height: 6px;
+    width: 6px;
+    top: 14px;
+    left: 5px;
+    background-color:#ebaa48 ;
+    border-radius: 50%;
+    box-shadow: 80px 0 0 #ebaa48;
+}
+.flight-median i{
+position: relative;
+top: -11px;
+color: #ebaa48;
+}
+.boarding-pass .card.card-bottom{
+    flex-direction:column ;
+    border-radius: 0 0 16px 16px;
+}
+
+.boarding-pass .card.card-bottom .card-row{
+    display: flex;
+    justify-content: space-between;
+}
+.boarding-pass .card.card-bottom .card-row:not(:last-child){
+    margin-bottom: 32px;
+}
+.boarding-pass .card.card-bottom .label{
+    font-size: 14px;
+    color: #5c7003;
+}
+
+.boarding-pass .card.card-bottom .content{
+    font-size: 14px;
+    font-weight: 900;
+}
+.median{
+    background-color: white;
+    margin: 0 auto;
+    border: 2px dashed grey;
+}
+
+/* https://www.youtube.com/watch?v=KnkNJB9LGc8 */ 
