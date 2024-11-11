@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Health Tracker App</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2 class="logo">HealthTracker</h2>
+        <nav>
+            <a href="#dashboard" class="nav-link active">Dashboard</a>
+            <a href="#workouts" class="nav-link">Workouts</a>
+            <a href="#achievements" class="nav-link">Achievements</a>
+            <a href="#profile" class="nav-link">Profile</a>
+        </nav>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="content">
+        <!-- Dashboard Header -->
+        <header class="header">
+            <h1>Welcome Back!</h1>
+            <p>Stay consistent with your goals</p>
+        </header>
+
+        <!-- Dashboard Section with Grid Layout -->
+        <section class="dashboard-grid">
+            <!-- Progress Overview Card -->
+            <div class="card progress-overview">
+                <h2>Daily Progress</h2>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%;">75%</div>
+                </div>
+                <button class="primary-btn">Start Workout</button>
+            </div>
+
+            <!-- Workout Routines Card -->
+            <div class="card workout-routines">
+                <h2>Workout Routines</h2>
+                <div class="routine">
+                    <h3>Cardio</h3>
+                    <p>30 minutes - Burn 250 calories</p>
+                </div>
+                <div class="routine">
+                    <h3>Strength</h3>
+                    <p>45 minutes - Burn 300 calories</p>
+                </div>
+            </div>
+
+            <!-- Achievements Card -->
+            <div class="card achievements">
+                <h2>Your Achievements</h2>
+                <div class="achievement">
+                    <p>5-Day Streak</p>
+                    <span>🏅</span>
+                </div>
+                <div class="achievement">
+                    <p>First 5K Run</p>
+                    <span>🏆</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Graphs Section -->
+        <section class="graphs-section">
+            <div class="chart-card">
+                <h2>Weekly Progress</h2>
+                <canvas id="progressChart"></canvas>
+            </div>
+            <div class="chart-card">
+                <h2>Calories Burned</h2>
+                <canvas id="caloriesChart"></canvas>
+            </div>
+        </section>
+    </main>
+
+    <!-- External JS File for Chart.js Configuration -->
+    <script src="scripts.js"></script>
+</body>
+</html>

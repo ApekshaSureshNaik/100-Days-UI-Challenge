@@ -1,0 +1,366 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: #F5F7FA; /* Light Gray */
+    color: #34495E; /* Dark Gray */
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #2C3E50; /* Dark Blue */
+    color: #ECF0F1; /* Light Gray */
+    width: 220px;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.sidebar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #ECF0F1; /* Light Gray */
+}
+
+.sidebar .nav-link {
+    display: block;
+    color: #BDC3C7; /* Lighter Gray */
+    text-decoration: none;
+    padding: 10px 0;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    color: #16A085; /* Teal */
+}
+
+/* Main Content Area */
+.content {
+    flex: 1;
+    padding: 40px;
+}
+
+/* Dashboard Header */
+.header h1 {
+    font-size: 28px;
+    color: #2C3E50; /* Dark Blue */
+}
+
+.header p {
+    color: #7F8C8D; /* Lighter Gray */
+}
+
+/* Dashboard Grid Layout */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Card Styles */
+.card {
+    background-color: #FFFFFF; /* White */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    font-size: 20px;
+    color: #2C3E50; /* Dark Blue */
+    margin-bottom: 15px;
+}
+
+/* Progress Overview Card */
+.progress-bar {
+    background: #ECF0F1; /* Light Gray */
+    border-radius: 5px;
+    height: 20px;
+    overflow: hidden;
+    margin: 15px 0;
+}
+
+.progress {
+    background: #16A085; /* Teal */
+    height: 100%;
+    color: #FFFFFF; /* White */
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.primary-btn {
+    display: inline-block;
+    background-color: #2C3E50; /* Dark Blue */
+    color: #FFFFFF; /* White */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    border: none;
+}
+
+.primary-btn:hover {
+    background-color: #2980B9; /* Lighter Blue */
+}
+
+/* Workout Routines */
+.workout-routines .routine {
+    padding: 10px;
+    border-bottom: 1px solid #ECF0F1; /* Light Gray */
+    margin-bottom: 10px;
+}
+
+.workout-routines .routine:last-child {
+    border-bottom: none;
+}
+
+.routine h3 {
+    font-size: 18px;
+    color: #2C3E50; /* Dark Blue */
+}
+
+.routine p {
+    color: #7F8C8D; /* Lighter Gray */
+}
+
+/* Achievements */
+.achievements .achievement {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ECF0F1; /* Light Gray */
+    margin-bottom: 10px;
+}
+
+.achievements .achievement:last-child {
+    border-bottom: none;
+}
+
+.achievement p {
+    font-size: 18px;
+    color: #2C3E50; /* Dark Blue */
+}
+
+.achievement span {
+    font-size: 24px;
+    color: #F39C12; /* Yellow (for trophy or medal) */
+}
+
+/* Graphs Section */
+.graphs-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.chart-card {
+    background-color: #FFFFFF; /* White */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.chart-card h2 {
+    font-size: 20px;
+    color: #2C3E50; /* Dark Blue */
+    margin-bottom: 15px;
+}
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: #F5F7FA; /* Light Gray */
+    color: #34495E; /* Dark Gray */
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #2C3E50; /* Dark Blue */
+    color: #ECF0F1; /* Light Gray */
+    width: 220px;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.sidebar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #ECF0F1; /* Light Gray */
+}
+
+.sidebar .nav-link {
+    display: block;
+    color: #BDC3C7; /* Lighter Gray */
+    text-decoration: none;
+    padding: 10px 0;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    color: #16A085; /* Teal */
+}
+
+/* Main Content Area */
+.content {
+    flex: 1;
+    padding: 40px;
+}
+
+/* Dashboard Header */
+.header h1 {
+    font-size: 28px;
+    color: #2C3E50; /* Dark Blue */
+}
+
+.header p {
+    color: #7F8C8D; /* Lighter Gray */
+}
+
+/* Dashboard Grid Layout */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Card Styles */
+.card {
+    background-color: #FFFFFF; /* White */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    font-size: 20px;
+    color: #2C3E50; /* Dark Blue */
+    margin-bottom: 15px;
+}
+
+/* Progress Overview Card */
+.progress-bar {
+    background: #ECF0F1; /* Light Gray */
+    border-radius: 5px;
+    height: 20px;
+    overflow: hidden;
+    margin: 15px 0;
+}
+
+.progress {
+    background: #16A085; /* Teal */
+    height: 100%;
+    color: #FFFFFF; /* White */
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.primary-btn {
+    display: inline-block;
+    background-color: #2C3E50; /* Dark Blue */
+    color: #FFFFFF; /* White */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    border: none;
+}
+
+.primary-btn:hover {
+    background-color: #2980B9; /* Lighter Blue */
+}
+
+/* Workout Routines */
+.workout-routines .routine {
+    padding: 10px;
+    border-bottom: 1px solid #ECF0F1; /* Light Gray */
+    margin-bottom: 10px;
+}
+
+.workout-routines .routine:last-child {
+    border-bottom: none;
+}
+
+.routine h3 {
+    font-size: 18px;
+    color: #2C3E50; /* Dark Blue */
+}
+
+.routine p {
+    color: #7F8C8D; /* Lighter Gray */
+}
+
+/* Achievements */
+.achievements .achievement {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ECF0F1; /* Light Gray */
+    margin-bottom: 10px;
+}
+
+.achievements .achievement:last-child {
+    border-bottom: none;
+}
+
+.achievement p {
+    font-size: 18px;
+    color: #2C3E50; /* Dark Blue */
+}
+
+.achievement span {
+    font-size: 24px;
+    color: #F39C12; /* Yellow (for trophy or medal) */
+}
+
+/* Graphs Section */
+.graphs-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.chart-card {
+    background-color: #FFFFFF; /* White */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.chart-card h2 {
+    font-size: 20px;
+    color: #2C3E50; /* Dark Blue */
+    margin-bottom: 15px;
+}
